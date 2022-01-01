@@ -1,0 +1,43 @@
+--> Creational Patterns
+Builer ile factory arasindaki en onemli fark : 
+Builder deseni tek urunu olusturmaya yonelikken Abstract Factory belli bir urun ailesini olusturmayi hedefler. 
+
+	Singleton
+	Abstract Factory
+	Builder Deseni
+
+
+--> Structural Patterns : 
+
+	Adapter Tasarim Deseni
+1-) Interface ile kodlanilmis ve uzerine yeni ozellikler eklenilecekse (mesela indirim uygulamasi vs.) 
+o halde yeni getirilecek olan kutuphane/yazilacak olan kod, ana koda dahil edilmeden once adapter classi olustururlur
+2-) Adapter class'i interface ile imlement edilir.
+3-) Adapter class'inda private olarak yeni eklenecek kod/kutuphane Adaptee adi altinda olusturulur. 
+(Ya kutuphaneni asil ismi yazilir)
+4-) implement geregi getirilien override fonksiyonlarin icine adaptee islemleri yapilir
+
+	Bridge Tasarim Deseni
+1- ) Soyut class icinde  interface private olur ve bu interface degeri constructor ile alinir
+2- ) Soyut class somutlastirirken icine icindeki interface'i iceren bir class gonderilir
+3- ) Soyut classtaki public fonksiyon cagrilir
+
+	Facede Tasarim Deseni
+1-) Bir islem icin yapilmasi gereken fonksiyonlar class class ayrildiktan sonra bu classlarin ortak cati
+altinda toplamak icin bu facede tasarim deseni uygulanir.
+2-) Mesela Uye kontrol icin  gerekli kontrollerin yapilmasi gerekiyor. Bu kontroller ayri ayri yazildiktan sonra
+kolaylik olsun diye tek cati altinda birlestirilir. Boylece istemci ya da baska yerlerde bu kodlar tekrar tekrar 
+cagirilmasina gerek kalmaz ve ayrica zaman kazandirir.
+	
+	Compozite Tasarim Deseni
+1-) Calisan diye bir soyut class olsun
+2-) CompositeCalisan extends Calisan. Ayrica Calisan ekleme cikarma fonksiyonlari olsun. CompoziteCalisan'in
+altinda calisanlar olabilir. Agac,dal gibi ornekler verilebilir. Daha kucuk dallar ya da yapraklar icerebilir.
+Bunun sebeble icinde liste tutar.
+3-) LeadCalisan extends Calisan. Leaf Calisanin altinda calisan olmaz. Bu yuzden uc noktadir. Yaprak gibi
+
+
+
+--> Behavioral Tasarim Deseni :
+
+

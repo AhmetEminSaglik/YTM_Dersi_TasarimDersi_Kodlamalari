@@ -14,7 +14,8 @@ public class PrimitiveSoldier extends Soldier { //leaf olarak belledik bunu
 
     @Override
     public void removeSoldier(Soldier soldier) {
-        listSoldier.remove(soldier);
+//        listSoldier.remove(soldier);
+//        System.out.println("PRIMITIVE SOLDIER ALTINDA KOMUTAN YOK NASIL KALDIRACAK???");
     }
 
     @Override

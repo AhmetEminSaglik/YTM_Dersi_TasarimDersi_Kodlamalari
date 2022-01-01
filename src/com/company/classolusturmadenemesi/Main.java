@@ -12,7 +12,8 @@ public class  Main {
             Class<?> clazz = Class.forName(className);
 
             Constructor<?> ctor = clazz.getConstructor(String.class);
-            ctor.newInstance(new Object[]{"Deneme"});
+            ctor.newInstance(new Object[]{"Deneme"}); // bu da olur
+            ctor.newInstance("Deneme");       // bu da olur
 
 
         } catch (ClassNotFoundException e) {

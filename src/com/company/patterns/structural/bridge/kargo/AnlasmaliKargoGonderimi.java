@@ -4,6 +4,6 @@ public class AnlasmaliKargoGonderimi extends KargoGonder {
     @Override
     public void gonder() {
         System.out.println("Anlasmali Kargo Gonderimi");
-        kargo.kargoGonder(gonderen, alici);
+        iKargo.kargoGonder(gonderen, alici);
     }
 }

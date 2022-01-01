@@ -27,7 +27,7 @@ public class CompositeSoldier extends Soldier {
 
     @Override
     public void executeOrder() {
-        System.out.println("Command : " + rank + " " + name + " Composite");
+        System.out.println("> Command : " + rank + " " + name + " Composite");
         for (Soldier tmpSoldier : listSoldier) {
 //            System.out.println(tmpSoldier.rank + " " + tmpSoldier.name + " is under command  of  Commander : " + rank + " " + name);
             tmpSoldier.executeOrder();

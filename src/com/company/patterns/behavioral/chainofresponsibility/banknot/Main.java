@@ -5,6 +5,6 @@ import com.company.patterns.behavioral.chainofresponsibility.banknot.paralar.*;
 public class Main {
     public static void main(String[] args) {
         Bankamatik bankamatik = new Bankamatik();
-        bankamatik.paracek(65);
+        bankamatik.paracek(1385);
     }
 }

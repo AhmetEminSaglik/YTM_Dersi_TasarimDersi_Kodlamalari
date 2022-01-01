@@ -12,7 +12,6 @@ public class Kadro extends Sirket {
 
     @Override
     public void ekle(Sirket ys) {
-        System.out.println("GELDII+");
         liste.add(ys);
 
     }
@@ -25,15 +24,19 @@ public class Kadro extends Sirket {
 
     @Override
     public void yazdir(int satirbasi) {
-        for (int i = 0; i < satirbasi; i++) {
-            System.out.println();
-            System.out.print("-");
-        }
         System.out.println("> " + isim + " - " + departman);
 
-        for (Sirket u : liste) {
-            u.yazdir(satirbasi + 2);
+        for (int i = 0; i < liste.size(); i++) {
+            System.out.println(liste.get(i).isim + " " + liste.get(i).departman);
+
+            for (int j = 0; j < satirbasi; j++) {
+                System.out.println();
+                System.out.print("-");
+
+            }
         }
+//        System.out.println("AAAAA");
+
 
     }
 }

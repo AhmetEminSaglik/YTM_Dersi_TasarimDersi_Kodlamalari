@@ -13,4 +13,9 @@ public class Main {
         video.showScreen();
 
     }
+
+
+    /*Soyut class icinde  interface private olur ve bu interface degeri constructor ile alinir
+     * Soyut class somutlastirirken icine icindeki interfaci iceren bir class gonderilir
+     * Soyut classtaki public fonksiyon cagrilir*/
 }
